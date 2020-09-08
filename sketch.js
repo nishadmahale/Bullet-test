@@ -26,13 +26,14 @@ function setup () {
 
 
 function draw(){
+    background("yellow");
     
     if(hasColided (bullet,wall)) {
         
         bullet.velocityX=0;
 
        var  damage=0.5*weight*speed*speed/(thickness*thickness*thickness);
-        ;
+        
     if(damage>10){
             bullet.shapeColor= colour(255,0,0);
        }
