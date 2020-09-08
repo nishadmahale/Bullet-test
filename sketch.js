@@ -32,7 +32,7 @@ function draw(){
         bullet.velocityX=0;
 
        var  damage=0.5*weight*speed*speed/(thickness*thickness*thickness);
-        car.velocityX=0;
+        ;
     if(damage>10){
             bullet.shapeColor= colour(255,0,0);
        }
