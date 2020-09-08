@@ -13,6 +13,7 @@ function setup () {
     weight=random(30,52);
     thickness=random(22,83);
     bullet.velocityX=speed;
+    
     bullet=createSprite(50,200,50,50);
     wall=createSprite(1200,200,60,thickness,height/2);
     
@@ -33,10 +34,10 @@ function draw(){
        var  damage=0.5*weight*speed*speed/(thickness*thickness*thickness);
         car.velocityX=0;
     if(damage>10){
-            bullet.shapeColour= colour(255,0,0);
+            bullet.shapeColor= colour(255,0,0);
        }
     if (damage<10){
-       bullet.shapeColour=colour(0,255,0);
+       bullet.shapeColor=colour(0,255,0);
       }
     
     }
