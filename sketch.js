@@ -26,26 +26,28 @@ function setup () {
 
 
 function draw(){
-    background("green");
+     background("Green");
     
-    if(hasColided (bullet,wall)) {
+    
+   
+if(hasColided (bullet,wall)) {
         
         bullet.velocityX=0;
 
-         damage=0.5*weight*speed*speed/(thickness*thickness*thickness);
+       var  damage=0.5*weight*speed*speed/(thickness*thickness*thickness);
         
     if(damage>10){
-            bullet.shapeColor= colour(255,0,0);
+            wall.shapeColor= colour(255,0,0);
        }
     if (damage<10){
-       bullet.shapeColor=colour(0,255,0);
+       wall.shapeColor=colour(0,255,0);
       }
     
-    }
-    
+    }    
 
 drawSprites();
 }
+
 
 function hasColided(Lbullet,Lwall) {
   bulletRightEdge=Lbullet.x+bullet.width;
