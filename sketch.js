@@ -1,7 +1,7 @@
 var wall,thickness;
 var bullet,speed,weight;
 
-bullet.velocityX=20000;
+
 
 
 
@@ -32,7 +32,7 @@ function draw(){
         
         bullet.velocityX=0;
 
-       var  damage=0.5*weight*speed*speed/(thickness*thickness*thickness);
+         damage=0.5*weight*speed*speed/(thickness*thickness*thickness);
         
     if(damage>10){
             bullet.shapeColor= colour(255,0,0);
