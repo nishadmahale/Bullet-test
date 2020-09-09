@@ -14,6 +14,8 @@ function setup () {
     speed=random(223,321);
     weight=random(30,52);
     thickness=random(22,83);
+    
+    bullet.velocityX=speed;
 
     bullet=createSprite(50,200,50,50,thickness.height/2);
     wall=createSprite(1200,200,60);
