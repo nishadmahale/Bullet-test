@@ -1,6 +1,8 @@
 var wall,thickness;
 var bullet,speed,weight;
 
+bullet.velocityX=20000;
+
 
 
 
