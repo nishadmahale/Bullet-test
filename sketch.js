@@ -13,6 +13,7 @@ function setup () {
     car.velocityX=speed;
     
     weight=random(400,1500);
+     thickness=random(22,83);
     
     
   
@@ -35,7 +36,7 @@ function draw(){
     
     
    
-if(hasColided (bullet,wall)) {
+if(hasColided (bullet,wall)) 
         
         bullet.velocityX=0;
 
